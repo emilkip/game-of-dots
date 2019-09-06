@@ -1,6 +1,6 @@
-#Game Of Dots
+# Game Of Dots
 
-###Run
+### Run
  
 `npm install`
 
