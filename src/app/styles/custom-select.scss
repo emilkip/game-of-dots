@@ -1,0 +1,58 @@
+@import 'variables.scss';
+
+.custom-select {
+  position: relative;
+  margin: 5px;
+
+  &__selected {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 200px;
+    height: 50px;
+    padding: 10px;
+    background-color: $grey-2;
+    color: $grey-1;
+    border-radius: 5px;
+
+    &:hover {
+      cursor: pointer;
+      opacity: .8;
+    }
+  }
+
+  &__carret {
+    font-size: 10px;
+    margin: 0 10px;
+  }
+
+  &__items {
+    display: none;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 50px;
+    background-color: $grey-2;
+    color: $grey-1;
+    border-radius: 0 0 5px 5px;
+    overflow: hidden;
+    z-index: 100;
+
+    &--visible {
+      display: block;
+    }
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    border: 1px solid #eee;
+
+    &:hover {
+      cursor: pointer;
+      opacity: .8;
+    }
+  }
+}
